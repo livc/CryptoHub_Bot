@@ -1,1 +1,5 @@
-# CryptoHub_Bot
+<div align="center">
+  <img src="./cryptohub.png"><br><br>
+</div>
+
+-----------------
