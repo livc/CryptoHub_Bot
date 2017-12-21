@@ -12,7 +12,7 @@
 
 `/check coinname` search group, eg: `/check btc`
 
-`/join` index your group to [@Crypt0Hub_Bot](https://t.me/Crypt0Hub_Bot)(only works in groups and only can used by **admin**, so you must add the bot to a group, type command `/join`, and follow the prompts to input basic information.)
+`/join` index your group to [@Crypt0Hub_Bot](https://t.me/Crypt0Hub_Bot)(only works in groups and only can used by **admin**, so you must add the bot to a group, type command `/join`, and follow the prompts to input basic information.) After that the group information will be sent to [@CryptoHub_Channel] automatically.
 
 `/delete` remove your group from [@Crypt0Hub_Bot](https://t.me/Crypt0Hub_Bot)
 
