@@ -94,6 +94,9 @@ def join(bot, update, user_data):
 
 
 def start(bot, update, args, user_data):
+    if update.effective_chat.type != 'private':
+        return
+
     start_info = (
             '`/list` show all categories \n'
             '`/check coinname` search group eg:`/check btc`\n'
@@ -194,6 +197,9 @@ def cancel(bot, update, user_data=None):
 
 
 def delete(bot, update, user_data):
+    if update.effective_chat.type != 'private':
+        return
+
     userid = update.message.from_user.id
     user_data['admin_id'] = userid
     rtn = [i['title'] for i in db.find({'admin_id': userid})]
@@ -217,6 +223,9 @@ def error(bot, update, error):
 
 
 def list_categ(bot, update):
+    if update.effective_chat.type != 'private':
+        return
+
     k = kb(config['categories'])
     update.message.reply_text('请选择群组分类 \nSelect the category you wanna search pls.',
                               reply_markup=ReplyKeyboardMarkup(k))
