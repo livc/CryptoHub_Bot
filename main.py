@@ -51,7 +51,7 @@ def group_info(dict):
 
 def print_html(dict):
     text = ''
-    for i in db.find(dict):
+    for i in db.find(dict).sort({'tag': 1}):
         text += '<a href="' + i['link'] + '">' + i['title'] + '</a> \n'
     return text
 
