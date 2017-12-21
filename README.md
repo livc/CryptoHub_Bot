@@ -16,6 +16,8 @@
 
 `/delete` remove your group from [@Crypt0Hub_Bot](https://t.me/Crypt0Hub_Bot)
 
+![](./img/intro.jpg)
+
 ## Inline Mode
 
 eg: type `@Crypt0Hub_Bot btc` in any chat and select `btc`, then all groups about `btc` will be sent.
