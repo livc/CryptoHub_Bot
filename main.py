@@ -94,15 +94,19 @@ def join(bot, update, user_data):
 
 
 def start(bot, update, args, user_data):
-    start_info = '''Everything you desire in the revolution of cryptocurrency. \n\n
-                  CryptoHub_Bot is a Telegram bot to let you index, check,
-                  join any group about cryptocurrency automatically. \n\n
-                `/list` show all categories, we have categories about cryptocurrency, exchange, wallet, mining, OTC, and other related topics. \n
-                `/check btc` search bitcoin group \n
-                `/check eth` search eth group \n
-                `/join` index your group to @Crypt0Hub_Bot(only works in groups and only can used by admin, so you must add the bot to a group, type command /join, and follow the prompts to input basic information.) \n\n
-                inline mode \n
-                eg: type `@Crypt0Hub_Bot btc` in any chat and select btc, then all groups about btc will be sent.'''
+    start_info = (
+            '`/list` show all categories \n'
+            '`/check coinname` search group eg:`/check btc`\n'
+            '`/join` index your group to bot(only works in groups and only can used by admin, so you must add the bot '
+            'to a group, type command /join, and follow the prompts to input basic information.) \n\n'
+            'Inline mode \n'
+            'eg: type `@Crypt0Hub_Bot btc` in any chat and select btc, then all groups about btc will be sent. \n\n\n'
+            '`/list` 列出群组列表 \n'
+            '`/check coinname` 搜索群组 如`/check btc`\n'
+            '`/join` 把群组收录到bot中，需要管理员把bot添加到群组中，输入命令`/join`后按照提示运行，该命令只能在群组中使用 \n\n'
+            'Inline 模式 \n'
+            '在会话中输入`@Crypt0Hub_Bot btc`，选择btc后会自动发送所有关于比特币的群组'
+    )
     if len(args) == 0:
         bot.send_message(chat_id=update.message.chat_id, text=start_info)
     else:
