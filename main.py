@@ -109,6 +109,7 @@ def start(bot, update, args, user_data):
     )
     if len(args) == 0:
         bot.send_message(chat_id=update.message.chat_id, text=start_info)
+        return LIST
     else:
         k = kb(config['categories'])
         update.message.reply_text('请选择群组所属分类 \nSelect the category of your group pls.',
@@ -260,6 +261,7 @@ def main():
             DESC: [RegexHandler('^(' + '|'.join((config['categories'])) + ')$', desc, pass_user_data=True)],
             CONFIRM: [MessageHandler(Filters.text, confirm, pass_user_data=True)],
             INSERT: [RegexHandler('^(Yes|No)$', insert, pass_user_data=True)],
+            LIST: [MessageHandler(Filters.text, select_categ)],
             LINK: [MessageHandler(Filters.text, getlink, pass_user_data=True)],
             TAG: [RegexHandler('^[A-Za-z]+$', tag, pass_user_data=True)]
         },
