@@ -11,7 +11,7 @@ import os.path
 
 client = MongoClient()
 
-db = client.test.tggroup
+db = client.tg.tggroup
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 logger = logging.getLogger(__name__)
