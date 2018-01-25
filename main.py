@@ -9,7 +9,7 @@ import json
 import os.path
 
 
-client = MongoClient()
+client = MongoClient("mongodb://username:pass@127.0.0.1")
 
 db = client.tg.tggroup
 
