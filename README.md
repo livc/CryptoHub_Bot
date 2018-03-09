@@ -12,9 +12,9 @@
 
 `/check coinname` search group, eg: `/check btc`
 
-`/join` index your group to [@Crypt0Hub_Bot](https://t.me/Crypt0Hub_Bot)(only works in groups and only can used by **admin**, so you must add the bot to a group, type command `/join`, and follow the prompts to input basic information.) After that the group information will be sent to [@CryptoHub_Channel] automatically.
+`/join` index your group to the Bot(only works in groups and only can used by **admin**, so you must add the bot to a group, type command `/join`, and follow the prompts to input basic information.) After that the group information will be sent to channel automatically.
 
-`/delete` remove your group from [@Crypt0Hub_Bot](https://t.me/Crypt0Hub_Bot)
+`/delete` remove your group from bot.
 
 ![](./img/intro.jpg)
 
@@ -29,18 +29,6 @@ eg: type `@Crypt0Hub_Bot btc` in any chat and select `btc`, then all groups abou
 1. Install `mongodb`
 2. `copy config.json config_user.json` and type your settings in `config_user.json`
 3. `python3 main.py`
-
-## About
-
-Bot: [@Crypt0Hub_Bot](https://t.me/Crypt0Hub_Bot)
-
-Channel: [@CryptoHub_Channel](https://t.me/CryptoHub_Channel) (Broadcast new groups)
-
-Chat: [@CryptoHub_Chat](https://t.me/CryptoHub_Chat) (Both English and Chinese are welcome)
-
-Source: <https://github.com/livc/CryptoHub_Bot>
-
-Admin: [@livc95](https://t.me/livc95)
 
 ## Acknowledgement
 
